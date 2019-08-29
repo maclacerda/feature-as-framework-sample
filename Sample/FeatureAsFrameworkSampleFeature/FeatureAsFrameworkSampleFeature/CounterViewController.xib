@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CounterViewController" customModule="FeatureAsFrameworkSampleFeature" customModuleProvider="target">
+            <connections>
+                <outlet property="counterLabel" destination="HPo-gC-Eo1" id="O91-gx-mQG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="K0g-Fw-9R3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPo-gC-Eo1">
+                    <rect key="frame" x="5" y="314" width="365" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h71-AO-N87">
+                    <rect key="frame" x="5" y="607" width="365" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LKE-wr-W9Y"/>
+                    </constraints>
+                    <state key="normal" title="Increment"/>
+                    <connections>
+                        <action selector="incrementButtonClick" destination="-1" eventType="touchUpInside" id="VWb-9j-H6U"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HPo-gC-Eo1" secondAttribute="trailing" constant="5" id="6mb-1e-VTo"/>
+                <constraint firstItem="HPo-gC-Eo1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OYw-uX-CBK"/>
+                <constraint firstItem="HPo-gC-Eo1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="VLN-U0-v22"/>
+                <constraint firstItem="h71-AO-N87" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="X6s-vw-H4K"/>
+                <constraint firstItem="HPo-gC-Eo1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g7q-AE-poW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h71-AO-N87" secondAttribute="trailing" constant="5" id="qZd-Oa-u4Y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h71-AO-N87" secondAttribute="bottom" constant="20" id="zoR-zN-YnZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
